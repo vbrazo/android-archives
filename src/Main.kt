@@ -195,4 +195,22 @@ fun main(arguments: Array<String>) {
   val birthYear : Int = 2020 - age
 
   println("$nameToPrint $nicknameToPrint $myLastName, born on $birthYear, in $myCountry")
+  
+  // Triples and Pairs
+  val creditCard = Triple(123123232323, 274, "Visa")
+  val bankAccount = Pair(creditCard, 10)
+
+  println(creditCard.first)
+  println(creditCard.second)
+  println(creditCard.third)
+
+  println(bankAccount.first)
+  println(bankAccount.second)
+
+  val (creditCardInfo, balance) = bankAccount
+
+  println(balance)
+  println(creditCardInfo.first)
+  println(creditCardInfo.second)
+  println(creditCardInfo.third)  
 }
