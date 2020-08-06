@@ -252,5 +252,74 @@ fun main(arguments: Array<String>) {
   val hasNotVisitedBrazil = currentCountry !in visitedCountries
 
   println(hasVisitedBrazil)
-  println(hasNotVisitedBrazil)  
+  println(hasNotVisitedBrazil)
+  
+  // Lists
+  // - Lists are powered by arrays
+  // - Index data access - O(1)
+  // - Iteration - O(n)
+  // but list has a few specialties:
+  //    - dynamic size
+  //    - Remove O(n) - Shifts the list
+  //    - Add O(1) - Appends at end
+  val visitedCountriesList = listOf<String>(
+      "Brazil", "Japan", "Canada", "USA", "Spain"
+  )
+
+  println(visitedCountriesList)
+
+  val visitedCountriesMutableList = mutableListOf<String>(
+      "Brazil", "Japan", "Canada", "USA", "Spain"
+  )
+
+  println(visitedCountriesMutableList)
+
+  // appending element at the end of the list
+  visitedCountriesMutableList.add("Germany")
+
+  // appending element at any position
+  visitedCountriesMutableList.add(1, "Greece")
+
+  println(visitedCountriesMutableList)
+
+  visitedCountriesMutableList.addAll(3, listOf("Australia, Austria"))
+
+  // check if an element is inside the list
+  val hasBeenToJapan = "Japan" in visitedCountriesMutableList
+  println(hasBeenToJapan)
+
+  visitedCountriesMutableList.removeAll(listOf("Australia, Austria"))
+  visitedCountriesMutableList.removeAt(0)
+  visitedCountriesMutableList.remove("Brazil")
+
+  println(visitedCountriesMutableList)
+
+  visitedCountriesMutableList[1] = "Israel"
+
+  println(visitedCountriesMutableList)
+
+  val combineLists = visitedCountries + visitedCountriesMutableList
+  val emptyList = emptyList<String>()
+
+  println(combineLists)
+  println(emptyList)
+
+  visitedCountriesMutableList.clear()
+  println(visitedCountriesMutableList)
+
+  // Store Data in Collections Challenge
+  val challengeArray = arrayListOf<String>(
+      "game1", "game2", "game3", "game4", "game5"
+  )
+
+  challengeArray[2] = "change game"
+  println(challengeArray[1])
+
+  val challengeMutableList = challengeArray.toMutableList()
+
+  challengeMutableList.add("game6")
+  challengeMutableList.removeAt(0)
+
+  println(challengeMutableList)
+  println("game1" in challengeMutableList)
 }
