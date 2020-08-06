@@ -212,5 +212,45 @@ fun main(arguments: Array<String>) {
   println(balance)
   println(creditCardInfo.first)
   println(creditCardInfo.second)
-  println(creditCardInfo.third)  
+  println(creditCardInfo.third)
+  
+  // Arrays
+  // has fixed size
+  // you don't have the ability to add or remove elements after creating the array
+  val visitedCountries = arrayOf<String>(
+      "Brazil", "Japan", "Canada", "USA", "Spain"
+  )
+
+  println(visitedCountries)
+  println(visitedCountries.size)
+  println(visitedCountries[0])
+  println(visitedCountries.get(0))
+
+  visitedCountries + "China"
+  println(visitedCountries.size)
+
+  val sizedArray = Array(10) { "" }
+  val emptyArray = emptyArray<String>()
+
+  val intArrays = intArrayOf(1, 2, 3, 4)
+  println(intArrays)
+
+  // creates 10 elements of an array with value 0
+  val intArrays2 = IntArray(10)
+  println(intArrays2)
+
+  // other methods
+  println(visitedCountries.last())
+  println(visitedCountries.first())
+  println(visitedCountries.lastIndex)
+
+  // ways to check elements in arrays
+  val currentCountry = "Brazil"
+  println(visitedCountries.contains(currentCountry))
+
+  val hasVisitedBrazil = currentCountry in visitedCountries
+  val hasNotVisitedBrazil = currentCountry !in visitedCountries
+
+  println(hasVisitedBrazil)
+  println(hasNotVisitedBrazil)  
 }
