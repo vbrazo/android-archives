@@ -216,6 +216,7 @@ fun main(arguments: Array<String>) {
   
   // Arrays
   // has fixed size
+  // single chunck of memory
   // you don't have the ability to add or remove elements after creating the array
   val visitedCountries = arrayOf<String>(
       "Brazil", "Japan", "Canada", "USA", "Spain"
@@ -259,7 +260,8 @@ fun main(arguments: Array<String>) {
   // - Index data access - O(1)
   // - Iteration - O(n)
   // but list has a few specialties:
-  //    - dynamic size
+  //    - Changeable size
+  //    - Spread out of memory
   //    - Remove O(n) - Shifts the list
   //    - Add O(1) - Appends at end
   val visitedCountriesList = listOf<String>(
@@ -322,4 +324,21 @@ fun main(arguments: Array<String>) {
 
   println(challengeMutableList)
   println("game1" in challengeMutableList)
+  
+  // Last challenge of the section
+  val newArray = mutableListOf<String>(
+      "Something", "else"
+  )
+
+  newArray[0] = "Anything"
+
+  newArray.add("new element")
+
+  println(newArray)
+
+  newArray.remove("else")
+
+  println(newArray)
+
+  println("else" in newArray)
 }
