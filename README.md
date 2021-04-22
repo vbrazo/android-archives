@@ -3,6 +3,20 @@
 This is my personal Android archives and it's where I store my Android research that aims to provide resources to better interview developers in my engineering management journey.
 
 - [Android](#android-archives)
+  - [Android Layouts](#android-layouts)
+    - [Relative Layout](#relative-layout)
+    - [Linear Layout](#linear-layout)
+    - [Frame Layout](#frame-layout)
+    - [Constraint Layout](#constraint-layout)
+    - [Recycler View](#recycler-view)
+    - [View Pager](#view-pager)
+    - [Animations](#animations)
+  - [Android Data and Networking](#android-data-and-networking)
+    - [Saving data on Android](#saving-data-on-android)
+    - [Kotlin coroutines](#kotlin-coroutines)
+    - [Room database](#room-database)
+    - [Android networking](#android-networking)
+    - [Android background processing](#android-background-processing)
   - [Architecture](#architecture)
     - [MVC](#mvc)
     - [MVP](#mvp)
@@ -10,6 +24,23 @@ This is my personal Android archives and it's where I store my Android research 
     - [MVVM](#mvvm)
 
 # Android
+
+## Android Layouts
+
+### Relative Layout
+### Linear Layout
+### Frame Layout
+### Constraint Layout
+### Recycler View
+### View Pager
+### Animations
+
+## Android Data and Networking
+### Saving data on Android
+### Kotlin coroutines
+### Room database
+### Android networking
+### Android background processing
 
 ## Architecture
 
